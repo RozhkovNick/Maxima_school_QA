@@ -1,0 +1,15 @@
+public class main {
+    public static void main(String[] args){
+        String name = "Николай";
+        String lastName = " Рожков ";
+        int age = 30;
+        String year = " годиков.";
+        String sumThreeString = name + lastName + age + year;
+        System.out.println(sumThreeString);
+
+        String hobbi = "Увлекаюсь рыбалкой и походами. В последнем походе мы прошли ";
+        double length = 24.3;
+        String kilometers = " километра";
+        System.out.println(hobbi + length + kilometers );
+    }
+}
