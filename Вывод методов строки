@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        String myString = "This is my string, there are many like it but this one is mine";
+        String anotherString = "This one is not the same";
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Продолжить?");
+        String  value = scan.nextLine();
+        if(value.equals("да")){
+            System.out.println("Введите значение из возможных:" + "Набор, Сложение, Длина строки,Наполненность,Индекс символа, Равнозначность строк");
+            String choiseValue   = scan.nextLine();
+            if(choiseValue.equals("Набор")){
+                System.out.println("This is my string, there are many like it but this one is mine");
+            } else if (choiseValue.equals("Сложение")){
+                System.out.println(" firstString + secondString");
+            }else if (choiseValue.equals("Длина строки")){
+                System.out.println(myString.length());
+            }else if (choiseValue.equals("Наполненность")){
+                System.out.println(myString.isEmpty());
+            }else if (choiseValue.equals("Индекс символа")){
+                System.out.println(myString.charAt(8));
+            }else if (choiseValue.equals("Равнозначность строк")){
+                boolean areEqual = myString.equals(anotherString);
+                System.out.println(areEqual);
+            }
+            else {System.out.println("Нет такого значения");}
+        } else {
+            System.out.println("До свидания!");
+        }
+    }
