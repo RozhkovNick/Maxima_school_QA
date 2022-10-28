@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите любое число: ");
+        int Loc = sc.nextInt();
+        if(Loc < 10) {System.out.println ("Число меньше 10");}
+        if(Loc == 10){System.out.println ("Число равно 10");}
+        else if (Loc >10){System.out.println ("Число больше 10");}
+    }
+}

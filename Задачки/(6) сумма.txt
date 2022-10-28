@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Lain {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите три числа: ");
+        int one = sc.nextInt();
+        int two = sc.nextInt();
+        int three = sc.nextInt();
+        int four = 0;
+         if (one > two && one < three) {four = one + three;} 
+         else if (two > one && two < three) {four = two + three;}
+         else if (three > two && three < one) {four = three + one;}
+        System.out.println("Cумма больших чисел:" + four);
+    }
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите четыре числа: ");
+        int one = sc.nextInt();
+        int two = sc.nextInt();
+        int three = sc.nextInt();
+        int four = sc.nextInt();
+        int x = 0;
+        int y = 0;
+        if(one > 0) x = x + 1;
+        else y = y + 1;
+        if(two > 0) x = x + 1;
+        else y = y + 1;
+        if(three > 0) x = x + 1;
+        else y = y + 1;
+        if(four > 0) x = x + 1;
+        else y = y + 1;
+        System.out.println("Количество отрицательных чисел" + y);
+        System.out.println("Количество положительных чисел" + x);
+    }
+}

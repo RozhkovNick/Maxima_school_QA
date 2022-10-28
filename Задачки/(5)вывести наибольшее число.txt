@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Lain {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите три числа: ");
+        int one = sc.nextInt();
+        int two = sc.nextInt();
+        int three = sc.nextInt();
+        if(one > two && one > three) System.out.println(one);
+        if(two > one && two > three) System.out.println(two);
+        if(three > one && three > two) System.out.println(three);
+    }
+}

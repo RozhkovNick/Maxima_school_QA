@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Lain {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите два любых числа: ");
+        int one = sc.nextInt();
+        int two = sc.nextInt();
+        if (one < two) {System.out.println ("Второе число больше первого");}
+        else {System.out.println ("Первое число больше второго");}
+    }
+}

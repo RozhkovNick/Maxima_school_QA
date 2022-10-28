@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Меню:");
+        System.out.println("1. Колбаса 50р");
+        System.out.println("2. Хлеб 30р");
+        System.out.println("3. Сыр 100р");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите название товара: ");
+        String NameTovara = sc.nextLine();
+        switch (NameTovara) {
+            case "Колбаса":
+            System.out.println("Введите сколько у вас денег: ");
+            int value = sc.nextInt();
+            int sdacha = value - 50;
+            if (value < 50) System.out.println("Денег не хватает");
+            if (value == 50) System.out.println("Спасибо за покупку");
+            if (value > 50) System.out.println("Ваша сдача: " + sdacha);
+        }
+        switch (NameTovara) {
+            case "Хлеб":
+                System.out.println("Введите сколько у вас денег: ");
+                int valuex = sc.nextInt();
+                int sdachax = valuex - 35 ;
+                if (valuex < 30 )System.out.println("Денег не хватает" );
+                if (valuex == 30 )System.out.println("Спасибо за покупку" );
+                else if (valuex > 30 )System.out.println("Ваша сдача: " + sdachax);
+                break;
+                
+        }
+        switch (NameTovara) {
+            case "Сыр":
+                System.out.println("Введите сколько у вас денег: ");
+                int valueh = sc.nextInt();
+                int sdachah = walleth - 300 ;
+                if (valueh < 300 )System.out.println("Денег не хватает" );
+                if (valueh == 300 )System.out.println("Спасибо за покупку" );
+                else if (valueh > 300 )System.out.println("Ваша сдача: " + sdachah);
+                break;
+        }
+    }
+}
