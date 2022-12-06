@@ -1,0 +1,64 @@
+import java.io.File;
+
+public class Main {
+    class WebElement{
+        public WebElement(String locator){
+            System.out.println("BasePage");
+        }
+
+        public void info(boolean b) {
+        }
+    }
+   class BasePage{
+       public BasePage(){
+           System.out.println("BasePage");
+       }
+   }
+   class LoginData{
+        public LoginData(String login, String password){
+            this.login = login;
+            this.password = password;
+        }
+        public String getLogin(){
+            System.out.println("LoginData.getLogin = " + login);
+            return login;}
+        public String getPassword(){
+            System.out.println("LoginData.getPassword = " + password);
+            return password;}
+        private String login;
+        private  String password;
+   }
+   class LoginPage extends BasePage{
+        public void login (LoginData ld){}
+
+
+private WebElement login_eb = new WebElement("Login Edit Box locator");
+private WebElement password = new WebElement("Password Edit Box locator");
+private WebElement submit_button = new WebElement("Submit button locator");;
+
+   }
+   class HomePage extends BasePage{
+        public HomePage(){
+            System.out.println();
+        }
+        public boolean isImportandLabelAvaliable(){
+            System.out.println("HomePage.isImportandLabelAvaliable" + important_label);
+            return true;
+        }
+        private WebElement important_label = new WebElement("Important Label locator");
+
+   }
+   class BaseTest{
+        public BaseTest(){
+            System.out.println("BaseTest");
+        }
+   }
+class LoginTest extends BaseTest{
+        public void loginTest(){
+            File file = new File("C://Users//User//Desktop//LoginPassword.txt");
+            LoginData ld = new LoginData("some login","some password");
+            LoginPage loginPage = new LoginPage();
+            loginPage.login(ld);
+        }
+}
+}
