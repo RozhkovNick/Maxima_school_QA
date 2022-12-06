@@ -1,0 +1,9 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] masiv = {2, 11, 6, 1, 10, 20, 10, 5};
+        int max = masiv[0];
+        for (int i = 0; i < masiv.length; i++) {
+            if (masiv[i] > max )  max = masiv[i];
+        } System.out.println("Самое большое число: " + max);
+    }
+}
