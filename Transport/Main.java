@@ -19,8 +19,8 @@ public class Main {
         alDrices.add(new Sportage());
         alDrices.add(new Track());
         alDrices.add(new Track());
-        alDrices.add((Drive) new Pajero());
-        alDrices.add((Drive) new Cruiser());
+        alDrices.add( new Pajero());
+        alDrices.add( new Cruiser());
 
         alDrices.add(new Bike());
         alDrices.add(new Bike());
