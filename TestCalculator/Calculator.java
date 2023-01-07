@@ -23,9 +23,6 @@ public class Calculator {
     }
 
     public double div(double a, double b) {
-        if (b == 0) {
-            throw new InvalidParameterException("Error: b == 0");
-        }
         double result = a / b;
         return result;
     }
