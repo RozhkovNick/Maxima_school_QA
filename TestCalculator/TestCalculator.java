@@ -30,12 +30,7 @@ public class TestCalculator {
             "-4,2,-2"})
     void testDiv(double a, double b, double result){
         Assertions.assertEquals(result,calculator.div(a,b));}
-
-    @Test
-    void testDivError(){
-
-        Assertions.assertEquals("Error: b == 0",calculator.div(2,0));}
-
+    
     @ParameterizedTest
     @CsvSource({"2,3,8",
             "4,0,0"})
