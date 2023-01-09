@@ -10,6 +10,5 @@ public class Pajero extends FrameJeep {
     protected void changeGear() {
         super.changeGear();
     }
-
 }
 
