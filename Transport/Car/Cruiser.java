@@ -1,6 +1,5 @@
 package Car;
 
-
 public class Cruiser extends FrameJeep {
     @Override
     public void driveOn() {
