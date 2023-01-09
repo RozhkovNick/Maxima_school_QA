@@ -15,6 +15,4 @@ public class LoginData {
         System.out.println("LoginData.getPassword = " + password);
         return password;
     }
-
-
 }
