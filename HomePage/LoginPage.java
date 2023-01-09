@@ -17,7 +17,4 @@ public class LoginPage extends BasePage {
     private WebElement login_eb = new WebElement("Login Edit box locator");
     private WebElement password_eb = new WebElement("Password Edit box locator");
     private WebElement submit_button = new WebElement("Submit Button Edit box locator");
-
-
-
 }
