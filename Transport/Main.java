@@ -21,14 +21,11 @@ public class Main {
         alDrices.add(new Track());
         alDrices.add( new Pajero());
         alDrices.add( new Cruiser());
-
         alDrices.add(new Bike());
         alDrices.add(new Bike());
         alDrices.add(new Bike());
         alDrices.add(new Bike());
-
         alDrices.add(new Train());
-
         alDrices.add(new Bike());
         alDrices.add(new Bike());
         alDrices.add(new Bike());
@@ -37,14 +34,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
         for (Drive engine : getEngines()) {
             engine.driveOn();
         }
-
         for (Drive engine : getEngines()) {
             engine.driveOf();
         }
-
     }
 }
