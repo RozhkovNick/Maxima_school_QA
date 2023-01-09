@@ -10,5 +10,4 @@ public abstract class Jeep extends Car {
     protected void changeGear() {
         super.changeGear();
     }
-
 }
