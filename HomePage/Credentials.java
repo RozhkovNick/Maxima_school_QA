@@ -13,7 +13,6 @@ public class Credentials {
     public Credentials(String login, String password, String phone, String code) {
         System.out.println("Credentials constructor call with parameters: " +
                 login + ", " + password + ", " + phone + ", " + code);
-
         this.login = login;
         this.password = password;
         this.phone = phone;
