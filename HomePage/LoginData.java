@@ -11,6 +11,7 @@ public class LoginData {
         System.out.println("LoginData.getLogin = " + login);
         return login;
     }
+    
     public String getPassword() {
         System.out.println("LoginData.getPassword = " + password);
         return password;
