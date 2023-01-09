@@ -11,5 +11,4 @@ public class Cruiser extends FrameJeep {
     protected void changeGear() {
         super.changeGear();
     }
-
 }
