@@ -10,6 +10,4 @@ public class FrameJeep extends Jeep {
     protected void changeGear() {
         super.changeGear();
     }
-
-
 }
