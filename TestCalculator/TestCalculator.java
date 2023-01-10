@@ -31,6 +31,14 @@ public class TestCalculator {
     void testDiv(double a, double b, double result){
         Assertions.assertEquals(result,calculator.div(a,b));}
     
+    @ParameterizedTest(name = "Error: b == 0")
+    @CsvSource({"2,0"})
+    void testDivExceptions(double a, double b) {
+        Exception exception = assertThrows(Exception.class, () -> {
+            calculator.div(a, 0);
+        });
+        Assertions.assertEquals("Error: b == 0", exception.getMessage());}
+    
     @ParameterizedTest
     @CsvSource({"2,3,8",
             "4,0,0"})
