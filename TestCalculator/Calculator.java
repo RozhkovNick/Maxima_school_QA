@@ -33,5 +33,4 @@ public class Calculator {
         double result = Math.pow(a, pow);
         return result;
     }
-
 }
