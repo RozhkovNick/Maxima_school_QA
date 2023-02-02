@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="All test">
+    <test name="test">
+        <classes>
+            <class name="TestCalculator" />
+            <class name="TestCalculatorNeg" />
+        </classes>
+    </test>
+</suite>
