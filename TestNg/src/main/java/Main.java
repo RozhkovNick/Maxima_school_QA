@@ -10,8 +10,10 @@ public class Main {
     @Test
     public void main(){
       WebDriver driver = new ChromeDriver();
+        driver.manage().window().setSize(new Dimension(1980, 1020));
         driver.get(" https://the-internet.herokuapp.com");
         List<WebElement> allLinks = driver.findElements(By.tagName("a"));
         allLinks.get(10).click();
+        driver.quit();
     }
 }
