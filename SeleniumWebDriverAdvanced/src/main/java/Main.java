@@ -126,6 +126,30 @@ public class Main {
         Assert.assertEquals(expectedList, actualList);
         driver.quit();
     }
+     @Test
+    public void findSale() throws InterruptedException {
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().setSize(new Dimension(1980, 1020));
+        driver.get("https://litecart.stqa.ru/en/rubber-ducks-c-1/subcategory-c-2/");
+        Thread.sleep(2000);
+
+        String stickerSale = driver.findElement(By.cssSelector(".sticker.sale")).getText();
+        Assert.assertEquals(stickerSale,"SALE");
+
+        driver.quit();
+    }
+    @Test
+    public void findNew() throws InterruptedException {
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().setSize(new Dimension(1980, 1020));
+        driver.get("https://litecart.stqa.ru/en/rubber-ducks-c-1/subcategory-c-2/");
+        Thread.sleep(2000);
+
+        String stickerNew = driver.findElement(By.cssSelector(".sticker.new")).getText();
+        Assert.assertEquals(stickerNew,"NEW");
+
+        driver.quit();
+    }
 }
 
 
