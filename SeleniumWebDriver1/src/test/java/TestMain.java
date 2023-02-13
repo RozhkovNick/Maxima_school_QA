@@ -12,7 +12,6 @@ public class TestMain {
         driver.get(" https://the-internet.herokuapp.com");
 
         PageObject pageObject = new PageObject(driver);
-
         pageObject.setListWebElement(10);
 
         driver.quit();
