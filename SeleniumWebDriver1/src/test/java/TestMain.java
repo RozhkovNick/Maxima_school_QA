@@ -8,10 +8,11 @@ public class TestMain {
     @Test
     public void clickElementTest() {
         WebDriver driver = new ChromeDriver();
+        PageObject pageObject = new PageObject(driver);
+        
         driver.manage().window().setSize(new Dimension(1980, 1020));
         driver.get(" https://the-internet.herokuapp.com");
 
-        PageObject pageObject = new PageObject(driver);
         pageObject.setListWebElement(10);
 
         driver.quit();
