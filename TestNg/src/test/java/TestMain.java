@@ -8,6 +8,7 @@ public class TestMain extends BeforeAndAfter {
 
         NextPage nextPage = new NextPage(driver);
         nextPage.buttonHomeClick();
+        Assert.assertEquals(driver.getCurrentUrl(), "https://litecart.stqa.ru/en/");
     }
 
     @Test(priority = 2, description = "Test button Rubber Ducks")
