@@ -13,7 +13,7 @@ public class TestMain {
         driver.manage().window().setSize(new Dimension(1980, 1020));
         driver.get(" https://the-internet.herokuapp.com");
 
-        pageObject.setListWebElement(10);
+        pageObject.clickListWebElement(10);
 
         driver.quit();
     }
