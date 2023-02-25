@@ -10,7 +10,7 @@ public class PageObject {
         this.driver = driver;
     }
 
-    public void setListWebElement(int index) {
+    public void clickListWebElement(int index) {
         driver.findElements(listWebElement).get(index).click();
     }
 }
