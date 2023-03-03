@@ -8,27 +8,31 @@ public class AlertTest extends AlertBeforeAndAfter {
     public void alertClick() {
         alertMethods.clickAlert();
         String expected =  "You successfully clicked an alert";
-        Assert.assertEquals(alertMethods.checkResultClickAlert(), expected);
+        String result = alertMethods.checkResultClickAlert();
+        Assert.assertEquals(result, expected);
     }
 
     @Test(description = "Закрытие алерта по кнопке ДА")
     public void confirmYes() {
         alertMethods.confirmYesMethod();
         String expected =  "You clicked: Ok";
-        Assert.assertEquals(alertMethods.checkResultClickAlert(),expected);
+        String result = alertMethods.checkResultClickAlert();
+        Assert.assertEquals(result,expected);
     }
 
     @Test(description = "Закрытие алерта по кнопке НЕТ")
     public void confirmNo() {
         alertMethods.confirmNoMethod();
         String expected = "You clicked: Cancel";
-        Assert.assertEquals(alertMethods.checkResultClickAlert(), expected);
+        String result = alertMethods.checkResultClickAlert();
+        Assert.assertEquals(result, expected);
     }
 
     @Test(description = "Ввод текста и закрытие алерта")
     public void prompt() {
         alertMethods.promptMethod("Hello");
         String expected = "You entered: Hello";
-        Assert.assertEquals(alertMethods.checkResultClickAlert(), expected);
+        String result = alertMethods.checkResultClickAlert();
+        Assert.assertEquals(result, expected);
     }
 }
