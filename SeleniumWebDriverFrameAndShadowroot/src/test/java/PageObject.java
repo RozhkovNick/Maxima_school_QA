@@ -6,11 +6,11 @@ import org.testng.Assert;
 import java.time.Duration;
 
 public class PageObject {
-    WebDriver driver;
-    WebDriverWait wait;
-    WebElement canvas;
-    SearchContext drawingAppSR;
-    SearchContext welcomeDialogSR;
+    private WebDriver driver;
+    private WebDriverWait wait;
+    private WebElement canvas;
+    private SearchContext drawingAppSR;
+    private SearchContext welcomeDialogSR;
     private String initialWindow;
     private String joinSaidFrame = "https://the-internet.herokuapp.com/nested_frames";
     private String joinSaidWindowSwitch = "https://the-internet.herokuapp.com/windows";
