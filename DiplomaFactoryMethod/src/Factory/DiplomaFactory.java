@@ -1,4 +1,5 @@
 package Factory;
+
 import Diploma.*;
 
 public class DiplomaFactory {
