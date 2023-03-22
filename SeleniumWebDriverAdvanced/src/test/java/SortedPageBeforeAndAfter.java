@@ -16,7 +16,6 @@ public class SortedPageBeforeAndAfter {
 
     @BeforeTest
     public void join() {
-
         driver.manage().window().setSize(new Dimension(1980, 1020));
         driver.get("https://litecart.stqa.ru/en/rubber-ducks-c-1/subcategory-c-2/");
     }
