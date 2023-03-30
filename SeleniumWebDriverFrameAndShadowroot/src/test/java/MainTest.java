@@ -1,7 +1,7 @@
 import org.testng.annotations.Test;
 
 public class MainTest extends BeforeAndAfter {
-    PageObject methodsClass = new PageObject(driver);
+    private PageObject methodsClass = new PageObject(driver);
 
     @Test(description = "Тест на проверку фрэймов.")
     public void frame() {
