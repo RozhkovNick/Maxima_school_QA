@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeTest;
 import java.time.Duration;
 
 public class BeforeAndAfter {
-    WebDriver driver = new ChromeDriver();
+    public WebDriver driver = new ChromeDriver();
     public WebDriverWait wait;
 
     @BeforeTest
