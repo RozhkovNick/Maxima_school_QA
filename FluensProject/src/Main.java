@@ -3,8 +3,13 @@ import Page.LoginPage;
 import Page.SearchEntity;
 import Page.ShopMainPage;
 
+import java.util.logging.Logger;
+
 public class Main {
+    private static Logger LOG = Logger.getLogger(String.valueOf(MethodClass.class));
+
     public static void main(String[] args) {
+        LOG.info("==============Build================= \n");
         MethodClass object = new MethodClass();
         object.addProduct("Хлеб")
                 .addProduct("Молоко")
