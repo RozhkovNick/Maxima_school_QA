@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SeleniumWebDriverAdvanced" />
+        <module name="SeleniumWebDriverActions" />
+        <module name="My_repositories" />
+        <module name="TestNg" />
+        <module name="CalculatorTestNG" />
+        <module name="SeleniumWebDriverFrame" />
+        <module name="Decorator2.0" />
+        <module name="TestNg (1)" />
+        <module name="Parser" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CalculatorTestNG" target="18" />
+      <module name="Decorator2.0" target="18" />
+      <module name="My_repositories" target="18" />
+      <module name="Parser" target="19" />
+      <module name="SeleniumWebDriverActions" target="18" />
+      <module name="SeleniumWebDriverAdvanced" target="18" />
+      <module name="SeleniumWebDriverFrame" target="18" />
+      <module name="TestNg" target="18" />
+      <module name="TestNg (1)" target="18" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

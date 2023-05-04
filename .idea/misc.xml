@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/TestNg/pom.xml" />
+        <option value="$PROJECT_DIR$/Decorator/pom.xml" />
+        <option value="$PROJECT_DIR$/ParserXML/pom.xml" />
+        <option value="$PROJECT_DIR$/CalculatorTestNG/pom.xml" />
+        <option value="$PROJECT_DIR$/SeleniumWebDriver1/pom.xml" />
+        <option value="$PROJECT_DIR$/SeleniumWebDriverActions/pom.xml" />
+        <option value="$PROJECT_DIR$/SeleniumWebDriverAdvanced/pom.xml" />
+        <option value="$PROJECT_DIR$/SeleniumWebDriverFrameAndShadowroot/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK" />
+</project>
