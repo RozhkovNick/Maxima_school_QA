@@ -32,7 +32,7 @@ class MD5EncryptReaderDecoratorTest {
     }
 
     private Method getPreProcess() throws NoSuchMethodException {
-        Method method = MD5EncryptReaderDecorator.class.getDeclaredMethod("preProcess");
+        Method method = MD5EncryptReaderDecorator.class.getDeclaredMethod("preProcess",boolean.class);
         method.setAccessible(true);
         return method;
     }
