@@ -8,6 +8,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.function.BooleanSupplier;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -28,11 +29,11 @@ class MD5EncryptReaderDecoratorTest {
 
     @Test
     void preProcess() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-        Assertions.assertTrue((Boolean) getPreProcess().invoke("qwerty"));
+        Assertions.assertEquals(true, getPreProcess().invoke(decorator, "ToRead.txt"));
     }
 
     private Method getPreProcess() throws NoSuchMethodException {
-        Method method = MD5EncryptReaderDecorator.class.getDeclaredMethod("preProcess",boolean.class);
+        Method method = MD5EncryptReaderDecorator.class.getDeclaredMethod("preProcess", String.class);
         method.setAccessible(true);
         return method;
     }
@@ -44,6 +45,40 @@ class MD5EncryptReaderDecoratorTest {
 
     private Method getProcess() throws NoSuchMethodException {
         Method method = MD5EncryptReaderDecorator.class.getDeclaredMethod("process", ByteArrayOutputStream.class);
+        method.setAccessible(true);
+        return method;
+    }
+
+    @Test
+    void encrypt() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        Assertions.assertNotNull(getEncrypt().invoke(decorator, stream));
+    }
+
+    private Method getEncrypt() throws NoSuchMethodException {
+        Method method = MD5EncryptReaderDecorator.class.getDeclaredMethod("encrypt", ByteArrayOutputStream.class);
+        method.setAccessible(true);
+        return method;
+    }
+
+    @Test
+    void isValidFileType() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        Assertions.assertEquals(true, getIsValidFileType().invoke(decorator));
+    }
+
+    private Method getIsValidFileType() throws NoSuchMethodException {
+        Method method = MD5EncryptReaderDecorator.class.getDeclaredMethod("isValidFileType");
+        method.setAccessible(true);
+        return method;
+    }
+
+    @Test
+    void isPasswordNecessary() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        Assertions.assertEquals(false, getIsPasswordNecessary().invoke(decorator));
+
+    }
+
+    private Method getIsPasswordNecessary() throws NoSuchMethodException {
+        Method method = MD5EncryptReaderDecorator.class.getDeclaredMethod("isPasswordNecessary");
         method.setAccessible(true);
         return method;
     }
