@@ -21,6 +21,7 @@ public class    RestCalculatorController {
 
     @GetMapping("/add")
     public ResponseEntity<BigDecimal> add(@RequestParam BigDecimal a, @RequestParam BigDecimal b) {
+
         return ResponseEntity.ok(calculatorService.add(a, b));
     }
 
